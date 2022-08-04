@@ -1,0 +1,16 @@
+body{
+    background-color: #e2e2e2;
+}
+.header-container{
+    background-color: #393D49;
+}
+.space{
+    margin: 0 20px;
+}
+
+#uvindex{
+    text-align: center;
+}
+.header-container .nav-option{
+    margin: 0 25px;
+}
