@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  web:
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+
+  db:
+    container_name: db
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: monash
+    volumes:
+      - ./database:/var/lib/mysql
+    ports:
+      - "3306:3306"
