@@ -14,3 +14,25 @@ body{
 .header-container .nav-option{
     margin: 0 25px;
 }
+.layui-card{
+    border-radius: 10px;
+    box-shadow:0 1px 6px 0 rgb(0 0 0 / 70%); 
+}
+.layui-elem-field{
+    border-color: #ffcd00;
+}
+.layui-field-title {
+    margin: 10px 0 20px;
+    border-width: 5px 0 0;
+}
+.layui-elem-field legend{
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.poster{padding: 0;}
+.layui-card-header {
+    background-color: #aac3ff;
+}
+.cards{
+    background-color: red;
+}
