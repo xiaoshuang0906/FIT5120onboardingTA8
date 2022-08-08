@@ -1,43 +1,88 @@
 <% include header.html %>
+<br/>
 <div class="layui-container home-container">
-    <div class="layui-collapse">
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">Tip 1</h2>
-          <div class="layui-colla-content layui-show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sit eligendi tempora reiciendis dolores, dolorem dicta pariatur assumenda explicabo dolor natus minima accusamus sed nostrum repellendus nihil aut! Sequi, quaerat!</div>
+  
+  <div class="layui-row ">
+    <div class="layui-col-md6">
+      <div class="maincontainer">
+        <!-- thecard -->
+        <div class="thecard">
+        <!-- front of card -->
+        <!-- thefront -->
+          <div class="thefront">   
+            <img src="../static/images/t1.jpg" style="width: 100%;"/>
+            <h1>Great Ocean Road</h1>
+          </div>
+        <!-- back of card -->
+          <div class="theback">
+            <h1>Great Ocean Road</h1>
+            <p class="uv1"></p>>UV index Now:<%= uv[0] %></p><span class="uvcolor1"></span>
+            <p class="maxuv1">Max UV index today:<%= maxuv[0] %></p><span class="maxuvcolor1"></span>
+            <p>Tips:</p><%= tips[0] %>
         </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">Tip 2</h2>
-          <div class="layui-colla-content layui-show">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea similique, rerum dolor maxime dicta sit veritatis eveniet, voluptates ut quod adipisci dolorem earum optio facere facilis eius, minima quaerat delectus.</div>
-        </div>
-        <div class="layui-colla-item">
-          <h2 class="layui-colla-title">Tip 3</h2>
-          <div class="layui-colla-content layui-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam qui quis, laborum beatae porro quia sit consequatur amet accusantium, fugit voluptatem explicabo harum autem ipsum voluptatibus! Quis, iste ratione.</div>
-        </div>
-        <div class="layui-colla-item">
-            <h2 class="layui-colla-title">Tip 4</h2>
-            <div class="layui-colla-content layui-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam qui quis, laborum beatae porro quia sit consequatur amet accusantium, fugit voluptatem explicabo harum autem ipsum voluptatibus! Quis, iste ratione.</div>
-          </div>
-          <div class="layui-colla-item">
-            <h2 class="layui-colla-title">Tip 5</h2>
-            <div class="layui-colla-content layui-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam qui quis, laborum beatae porro quia sit consequatur amet accusantium, fugit voluptatem explicabo harum autem ipsum voluptatibus! Quis, iste ratione.</div>
-          </div>
-          <div class="layui-colla-item">
-            <h2 class="layui-colla-title">Tip 6</h2>
-            <div class="layui-colla-content layui-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam qui quis, laborum beatae porro quia sit consequatur amet accusantium, fugit voluptatem explicabo harum autem ipsum voluptatibus! Quis, iste ratione.</div>
-          </div>
-          <div class="layui-colla-item">
-            <h2 class="layui-colla-title">Tip 7</h2>
-            <div class="layui-colla-content layui-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam qui quis, laborum beatae porro quia sit consequatur amet accusantium, fugit voluptatem explicabo harum autem ipsum voluptatibus! Quis, iste ratione.</div>
-          </div>
       </div>
+      </div>
+    </div>
+    <div class="layui-col-md6">
+      <div class="maincontainer">
+        <div class="thecard">
+        <!-- front of card -->
+          <div class="thefront">
+            <img src="../static/images/t2.jpg" style="width: 100%;"/>
+            <h1>Phillip Island</h1>
+          </div>
+        <!-- back of card -->
+          <div class="theback">
+            <h1>Phillip Island</h1>
+            <p class="uv2">UV index Now:<%= uv[1] %></p><span class="uv2"></span>
+            <p class="maxuv2">Max UV index today:<%= maxuv[1] %></p><span class="maxuv2"></span>
+            <p>Tips:</p><%= tips[1] %>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="layui-row ">
+    <div class="layui-col-md6">
+      <div class="maincontainer">
+        <div class="thecard">
+        <!-- front of card -->
+          <div class="thefront">
+            <img src="../static/images/t3.jpg" style="width: 100%;"/>
+            <h1>The Grampians National Park</h1>
+          </div>
+        <!-- back of card -->
+          <div class="theback">
+            <h1>The Grampians National Park</h1>
+            <p>UV index Now:<%= uv[2] %></p><span class="uv3"></span>
+            <p>Max UV index today:<%= maxuv[2] %></p><span class="maxuv3"></span>
+            <p>Tips:</p><%= tips[2] %>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="layui-col-md6">
+      <div class="maincontainer">
+        <div class="thecard">
+        <!-- front of card -->
+          <div class="thefront">
+            <img src="../static/images/t1.jpg" style="width: 100%;"/>
+            <h1 class="subname">Dandenong Rnages</h1>
+          </div>
+        <!-- back of card -->
+          <div class="theback">
+            <h1>Back of Card</h1>
+            <h1>The Grampians National Park</h1>
+            <p>UV index Now:<%= uv[3] %></p><span class="uv4"></span>
+            <p>Max UV index today:<%= maxuv[3] %></p><span class="maxuv4"></span>
+            <p>Tips:</p><%= tips[3] %>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
 </div> 
-<script>
-    //注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
-    layui.use('element', function(){
-      var element = layui.element;
-      
-      //…
-    });
-    </script> 
-</body>
+
+
 </html>

@@ -45,9 +45,5 @@ function changeHlight(){
 }
 
 
-function changeColorBasedOnUV(classname){
-    $(classname).addClass("current");
-}
-
 
 

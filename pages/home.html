@@ -6,57 +6,57 @@
     <br/>
     <div class="layui-container home-container">
         <div class="layui-row layui-col-space15">
-            <div class="layui-col-md6">
+            <div class="layui-col-md4">
                 <div class="layui-card">
-                    <div class="layui-card-header">Today UV index</div>
+                    <div class="layui-card-header home-card">UV index Now</div>
                     <div class="layui-card-body">
-                      <h1 id="uvindex"></h1>
+                      <div id="uvindex"><span id="number"><%= uv %></span> of 10 <span class=" layui-btn-xs level <%= color %>" id="level-display"><%= text %></span></div>
+                    
                     </div>
                   </div>  
             </div>
-            <div class="layui-col-md6">
+            <div class="layui-col-md8">
                 <div class="layui-card">
-                    <div class="layui-card-header">Max Forecast</div>
+                    <div class="layui-card-header">Tips Today</div>
                     <div class="layui-card-body">
-                      
+                      <span class="layui-badge-dot layui-bg-green"></span>&nbsp;&nbsp;<%= data.tips %><br/>
+                      <span class="layui-badge-dot layui-bg-green"></span>&nbsp; Sunscreen: <%= data.sunscreen %>
                     </div>
                   </div>   
             </div>
           </div> 
           <br/>
-          <div class="layui-card">
-            <div class="layui-card-header">Recommendation today</div>
-            <div class="layui-card-body">
-              Some Recommendation<br>
-              Some Recommendation
-            </div>       
     </div>
     <fieldset class="layui-elem-field layui-field-title">
-      <legend>What's in here? </legend>
-      <div class="layui-field-box">
+      <legend>Tourist Destinations UV & Tips </legend>
+    </fieldset>
+    <div class="layui-container home-container">
         <div class="layui-row">
-          <div class="layui-col-md4">
-            <div class="layui-card">
-              <div class="layui-card-body cards">
-                <img>
-                <h1>Consequences</h1>
-              </div>
-            </div>
+          <div class="layui-col-md4 imgs">
+            <img src="../static/images/t1.jpg" width="100%">
+            <h2 class="subtitle">Great Ocean Road</h>
           </div>
-          <div class="layui-col-md4">
-            1
+          <div class="layui-col-md4 imgs">
+            <img src="../static/images/t2.jpg" width="100%">
+            <h2 class="subtitle">Great Ocean Road</h>
           </div>
-          <div class="layui-col-md4">
-            1
+          <div class="layui-col-md4 imgs">
+            <img src="../static/images/t3.jpg" width="100%">
+            <h2 class="subtitle">The Grampians National Park</h>
           </div>
         </div>
-      </div>
-    </fieldset>
+        <div class="layui-row">
+          <div >
+            <button id="btn-find" type="button" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal" ><a href="/destination">Fine the details</a></button>
+          </div>
+        </div>
+    </div>
+
 
     <script>
       window.onload = function(){
-        queryUVindex()
         changeHlight()
+        setLevel()
       }
     </script>
 </body>

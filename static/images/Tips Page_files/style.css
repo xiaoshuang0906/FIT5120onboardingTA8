@@ -1,0 +1,63 @@
+body{
+    background-color: #e2e2e2;
+}
+.header-container{
+    background-color: #393D49;
+}
+.space{
+    margin: 0 20px;
+}
+
+#uvindex{
+    text-align: center;
+}
+#number{
+    font-size: xxx-large;
+}
+.header-container .nav-option{
+    margin: 0 25px;
+}
+.layui-card{
+    border-radius: 10px;
+    box-shadow:0 1px 6px 0 rgb(0 0 0 / 70%); 
+}
+.layui-elem-field{
+    border-color: #ffcd00;
+}
+.layui-field-title {
+    margin: 10px 0 20px;
+    border-width: 5px 0 0;
+}
+.layui-elem-field legend{
+    margin: 0 auto;
+    font-size: 40px;
+}
+.poster{padding: 0;}
+.layui-card-header {
+    background-color: #aac3ff;
+}
+.imgs{
+  padding: 0 10px;
+}
+.subtitle{
+    text-align: center;
+    margin-top: 10px;
+}
+.home-card {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.815);
+}
+.level{
+    display: block;
+}
+.tourist{
+    margin-left: 20px;
+}
+.section2{
+    background-color: #ffe600;
+    height: 80px;
+}
+#btn-find{
+    display: block;
+    margin: 20px auto;
+}

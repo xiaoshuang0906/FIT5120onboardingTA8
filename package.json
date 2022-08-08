@@ -1,9 +1,15 @@
 {
   "dependencies": {
+    "axios": "^0.16.2",
+    "camaro": "^6.2.0",
     "ejs": "^2.7.2",
     "express": "^4.18.1",
     "layui": "^2.7.6",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
     "xhr2": "^0.2.1",
+    "xml-parse-from-string": "^1.0.1",
+    "xml2js": "^0.4.23",
     "xmlhttprequest": "^1.8.0"
   },
   "name": "onboarding-project",
