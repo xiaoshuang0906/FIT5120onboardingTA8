@@ -1,5 +1,5 @@
 const { rejects } = require('assert')
-const mysql = require('mysql')
+const mysql = require('mysql2')
 const { resolve } = require('path')
 //mysql configuration
 const config = {
