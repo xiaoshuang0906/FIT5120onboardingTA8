@@ -3,10 +3,10 @@ const mysql = require('mysql')
 const { resolve } = require('path')
 //mysql configuration
 const config = {
-    host:"127.0.0.1",
+    host:"db",
     database:'onboarding',
     user:'root',
-    password:'wswl998877'
+    password:process.env.DB_PASSWORD
 }
 
 const pool = mysql.createPool(config)
