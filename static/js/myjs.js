@@ -39,15 +39,29 @@ function changeHlight(){
     }
     if(title=='Home Page'){
         lis[0].classList.add('layui-this')
-    }else if(title=='Tips Page'){
+    }else if(title=='Tourist Destinations UV & Tips'){
         lis[1].classList.add('layui-this')
     }
 }
 
 
-function changeColorBasedOnUV(classname){
-    $(classname).addClass("current");
+// function changeColorBasedOnUV(uvclass,colorclass){
+//     if()
+//     $(classname).addClass("current");
+// }
+
+
+if(element['name']=='mel') {
+    let uvindex = element['index'][0]
+    if(uvindex<=2){
+        color = 'layui-btn'
+        text = 'low'
+    }else if(3<=uvindex<=5){
+        color = 'layui-btn-warm'
+        text = 'media'
+    }else if(uvindex>5){
+        color = 'layui-btn-danger'
+        text = 'high'
+    }
+
 }
-
-
-

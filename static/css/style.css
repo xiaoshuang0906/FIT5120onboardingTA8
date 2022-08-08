@@ -4,8 +4,31 @@ body{
 .layui-btn-normal{
  background-color: #aac3ff;    
 }
+.layui-fluid {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.footer{
+    bottom: 0;
+}
+.footer-bar{
+
+    background-color: #393D49;
+    color: #e2e2e2;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+}
 
 
+.logo{
+    width: 40%;
+    height: 0%;
+    margin: 10px
+}
 
 .maincontainer{
     height: 340px;

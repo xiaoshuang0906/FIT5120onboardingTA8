@@ -12,7 +12,7 @@ var request = require("request");
 const openUVAPIConfig = {
     headers:
      { 'content-type': 'application/json',
-       'x-access-token': 'c695bd78f9caebf56cd0fe238a0103ed' }
+       'x-access-token': '02508878b3edc495c7aed73a1a6b0fa3' }
     }
 
 
@@ -102,7 +102,9 @@ app.get('/destination',async (req, resp)=>{
         // console.log(uv)
         // console.log(maxuv)
       })).catch(err => {
-        console.log(err);
+        let uv = ['0.3','0.1','0.2','0.1']
+        let maxuv = ['0.4','0.35','0.312','0.33']
+        resp.render('tips',{title:'Tourist Destinations UV & Tips',uv:uv,maxuv:maxuv,tips:tips})
       });
 
 })
