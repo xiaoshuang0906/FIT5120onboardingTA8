@@ -10,6 +10,8 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    environment:
+      DB_PASSWORD: $DB_PASSWORD
 
   db:
     container_name: db
