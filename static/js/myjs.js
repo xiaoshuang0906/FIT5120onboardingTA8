@@ -50,7 +50,7 @@ function changeHlight(){
 //     $(classname).addClass("current");
 // }
 
-
+// This might not be needed? When commented out, nothing seems to change
 if(element['name']=='mel') {
     let uvindex = element['index'][0]
     if(uvindex<=2){
@@ -59,9 +59,14 @@ if(element['name']=='mel') {
     }else if(3<=uvindex<=5){
         color = 'layui-btn-warm'
         text = 'Medium'
-    }else if(uvindex>5){
+    }else if(6<=uvindex<=7){
         color = 'layui-btn-danger'
         text = 'High'
+    }else if(8<=uvindex<=10){
+        color = 'layui-btn-danger'
+        text = 'Very high'
+    }else if(10<=uvindex){
+        color = 'layui-btn-danger'
+        text = 'Extreme'
     }
-
 }
