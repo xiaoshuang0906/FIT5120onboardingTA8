@@ -55,13 +55,13 @@ if(element['name']=='mel') {
     let uvindex = element['index'][0]
     if(uvindex<=2){
         color = 'layui-btn'
-        text = 'low'
+        text = 'Low'
     }else if(3<=uvindex<=5){
         color = 'layui-btn-warm'
-        text = 'media'
+        text = 'Medium'
     }else if(uvindex>5){
         color = 'layui-btn-danger'
-        text = 'high'
+        text = 'High'
     }
 
 }

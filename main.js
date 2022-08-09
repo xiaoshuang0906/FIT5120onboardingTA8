@@ -43,13 +43,13 @@ app.get('/', async (req,res)=>{
                     let uvindex = element['index'][0]
                     if(uvindex<=2){
                         color = 'layui-btn'
-                        text = 'low'
+                        text = 'Low'
                     }else if(3<=uvindex<=5){
                         color = 'layui-btn-warm'
-                        text = 'media'
+                        text = 'Medium'
                     }else if(uvindex>5){
                         color = 'layui-btn-danger'
-                        text = 'high'
+                        text = 'High'
                     }
                     data = allTips[parseInt(uvindex)]
                     res.render('home',{title:'Home Page',uv:uvindex,color:color,text:text,data:data})
